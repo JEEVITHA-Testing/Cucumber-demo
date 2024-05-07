@@ -8,7 +8,7 @@ Scenario Outline: Users can perform a search on Google
         | search    |
         | Phone|
         |Testing|
-        |Jeeviths|
+        |Jeevitha|
 
 
 

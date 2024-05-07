@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.29">
-    <testcase classname="feature to test Search box" name="Users can perform a search on Google" time="0.073">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="0.566">
+    <testcase classname="feature to test signin page" name="Login should be successfully entered" time="0.211">
+        <system-out><![CDATA[Given User enter the Emailid as "jeevimoni@toolfe.com"......................passed
+And User enter the password as "Otomate@123"................................passed
+When User click on the login button.........................................passed
+Then click on check-in button...............................................passed
+And click on project icon...................................................passed
+Then click on order icon....................................................passed
+And Orderno created successfully............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Search box" name="Users can perform a search on Google" time="0.025">
         <system-out><![CDATA[Given I open the Google search page.........................................passed
 When I search for "Phone"...................................................passed
 Then I should see the results page..........................................passed
@@ -12,9 +22,9 @@ When I search for "Testing".................................................pass
 Then I should see the results page..........................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="feature to test Search box" name="Users can perform a search on Google 3" time="0.002">
+    <testcase classname="feature to test Search box" name="Users can perform a search on Google 3" time="0.011">
         <system-out><![CDATA[Given I open the Google search page.........................................passed
-When I search for "Jeeviths"................................................passed
+When I search for "Jeevitha"................................................passed
 Then I should see the results page..........................................passed
 ]]></system-out>
     </testcase>

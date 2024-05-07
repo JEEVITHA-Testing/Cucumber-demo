@@ -16,7 +16,9 @@ public class StepDefinition {
 	
 	@Given("I open the Google search page")
 	public void i_open_the_google_search_page() {
-	    driver=new ChromeDriver();
+	driver=new ChromeDriver();
+
+	    
 	    driver.manage().window().maximize();
 	    driver.get("https://www.google.com/");
 	    System.out.println(driver.getTitle()) ;
@@ -29,8 +31,7 @@ public class StepDefinition {
 	 
 	}
 	@Then("I should see the results page")
-	public void i_should_see_the_results_page() {
-		
+	public void i_should_see_the_results_page() {		
 	WebElement image = driver.findElement(By.xpath("(//div[@class='YmvwI'])[2]"));
 	image.click();
 	if(image.equals(image)) {
@@ -43,13 +44,23 @@ public class StepDefinition {
 
 		 byte[] src = ts.getScreenshotAs(OutputType.BYTES);
 		attach(src, "image/png", "screenshot");
-		 
+		
 	}
 	}
-
 
 	private void attach(byte[] src, String string, String string2) {
 		// TODO Auto-generated method stub
 		
 	}
-}
+	/*
+	    @After
+	   /*public void tearDown(Scenario scenario) {
+	        if (scenario.isFailed()) {
+	            // Take screenshot if scenario fails
+	            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+	            scenario.attach(screenshot, "image/png", "Screenshot");
+	        }
+	        driver.quit();*/
+	    }
+	
+
